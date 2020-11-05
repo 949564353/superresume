@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongang.superresume.dao.AppOrderMapper">
+  <resultMap id="BaseResultMap" type="com.hongang.superresume.entity.AppOrder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="app_id" jdbcType="BIGINT" property="appId" />
+    <result column="plan_id" jdbcType="BIGINT" property="planId" />
+    <result column="invalid_time" jdbcType="TIMESTAMP" property="invalidTime" />
+    <result column="phone_iden" jdbcType="VARCHAR" property="phoneIden" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="is_valid" jdbcType="INTEGER" property="isValid" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, app_id, plan_id, invalid_time, phone_iden, create_time, is_valid, version
+  </sql>
+</mapper>

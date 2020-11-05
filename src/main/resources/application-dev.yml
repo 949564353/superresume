@@ -1,0 +1,25 @@
+server:
+  port: 11132
+  servlet:
+    context-path: /superresume
+
+spring:
+  datasource:
+    username: transaction_cat
+    password: a!17836933686
+    url: jdbc:mysql://rm-2zemz5c04e8302537jo.mysql.rds.aliyuncs.com:3306/neigou?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.hongang.superresume.entity,com.hongang.superresume.common.vo
+
+#showSq
+logging:
+  level:
+    com.hongang.superresume.dao: debug
+
+#superresume的app.id为18
+app.id: 18
+
+

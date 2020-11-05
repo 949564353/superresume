@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongang.superresume.dao.WordTypeMapper">
+  <resultMap id="BaseResultMap" type="com.hongang.superresume.entity.WordType">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="type_code" jdbcType="VARCHAR" property="typeCode" />
+    <result column="type_name" jdbcType="VARCHAR" property="typeName" />
+    <result column="sort_num" jdbcType="TINYINT" property="sortNum" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="is_valid" jdbcType="CHAR" property="isValid" />
+    <result column="app_id" jdbcType="BIGINT" property="appId" />
+    <result column="main_type" jdbcType="CHAR" property="mainType" />
+    <result column="is_vip" jdbcType="CHAR" property="isVip" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.hongang.superresume.entity.WordType">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="type_img" jdbcType="LONGVARCHAR" property="typeImg" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, type_code, type_name, sort_num, create_time, is_valid, app_id, main_type, is_vip
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    type_img
+  </sql>
+</mapper>

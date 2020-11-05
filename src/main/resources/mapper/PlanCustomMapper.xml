@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongang.superresume.dao.PlanCustomMapper">
+  <resultMap id="BaseResultMap" type="com.hongang.superresume.entity.PlanCustom">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="plan_key" jdbcType="VARCHAR" property="planKey" />
+    <result column="plan_desc" jdbcType="VARCHAR" property="planDesc" />
+    <result column="is_valid" jdbcType="INTEGER" property="isValid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="app_id" jdbcType="BIGINT" property="appId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, plan_key, plan_desc, is_valid, create_time, version, app_id
+  </sql>
+</mapper>

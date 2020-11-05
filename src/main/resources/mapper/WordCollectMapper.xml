@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongang.superresume.dao.WordCollectMapper">
+  <resultMap id="BaseResultMap" type="com.hongang.superresume.entity.WordCollect">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="phone_iden" jdbcType="VARCHAR" property="phoneIden" />
+    <result column="word_id" jdbcType="BIGINT" property="wordId" />
+    <result column="is_valid" jdbcType="CHAR" property="isValid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="collect_type" jdbcType="CHAR" property="collectType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, phone_iden, word_id, is_valid, create_time, collect_type
+  </sql>
+</mapper>

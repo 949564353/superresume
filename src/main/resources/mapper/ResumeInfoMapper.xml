@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongang.superresume.dao.ResumeInfoMapper">
+  <resultMap id="BaseResultMap" type="com.hongang.superresume.entity.ResumeInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="iden_id" jdbcType="VARCHAR" property="idenId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="phone_num" jdbcType="VARCHAR" property="phoneNum" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="sex" jdbcType="CHAR" property="sex" />
+    <result column="age" jdbcType="TINYINT" property="age" />
+    <result column="education" jdbcType="VARCHAR" property="education" />
+    <result column="work" jdbcType="VARCHAR" property="work" />
+    <result column="other" jdbcType="VARCHAR" property="other" />
+    <result column="is_valid" jdbcType="CHAR" property="isValid" />
+    <result column="is_edit" jdbcType="CHAR" property="isEdit" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, iden_id, `name`, phone_num, email, sex, age, education, `work`, other, is_valid, 
+    is_edit, create_time
+  </sql>
+</mapper>

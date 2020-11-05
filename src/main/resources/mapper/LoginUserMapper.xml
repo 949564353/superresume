@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongang.superresume.dao.LoginUserMapper">
+  <resultMap id="BaseResultMap" type="com.hongang.superresume.entity.LoginUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="phone_num" jdbcType="VARCHAR" property="phoneNum" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="head_pic_url" jdbcType="VARCHAR" property="headPicUrl" />
+    <result column="is_valid" jdbcType="INTEGER" property="isValid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="nike_name" jdbcType="VARCHAR" property="nikeName" />
+    <result column="user_desc" jdbcType="VARCHAR" property="userDesc" />
+    <result column="user_type" jdbcType="CHAR" property="userType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    user_id, phone_num, `password`, head_pic_url, is_valid, create_time, nike_name, user_desc,
+    user_type
+  </sql>
+</mapper>
